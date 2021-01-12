@@ -1,0 +1,27 @@
+package br.senai.sp.jandira;
+
+import br.senai.sp.jandira.model.Conta;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Conta contaRenanPrazeres;
+		Conta c2;
+		
+		contaRenanPrazeres = new Conta();
+		c2 = new Conta();
+		
+		contaRenanPrazeres.numero = "111-0";
+		contaRenanPrazeres.titular = "RenanPrazeres";
+		contaRenanPrazeres.tipo = "corrente";
+		contaRenanPrazeres.saldo = 2000.0;
+		contaRenanPrazeres.ativa = true;
+		
+	System.out.println("nome: " + contaRenanPrazeres.titular);
+	System.out.println("Saldo: R$ " + contaRenanPrazeres.saldo);
+		
+	}
+
+}
