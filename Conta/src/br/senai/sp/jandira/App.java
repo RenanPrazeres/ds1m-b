@@ -9,9 +9,11 @@ public class App {
 		
 		Conta contaRenanPrazeres;
 		Conta contaPedro;
+		Conta contaDaAna;
 		
 		contaRenanPrazeres = new Conta();
 		contaPedro = new Conta();
+		contaDaAna = new Conta();
 		
 		//**CONTA RENAN PRAZERES
 		
@@ -33,7 +35,36 @@ public class App {
 		contaPedro.tipo = "Poupança";
 		contaPedro.ativa = true;
 		
+		//*** ContaDaAna
+
+		contaDaAna.titular = "Ana Gomes";
+		contaDaAna.numero = "333-0";
+		contaDaAna.tipo = "Corrente";
+		contaDaAna.ativa = true;
+		contaDaAna.chequeEspecial = 200;
+		contaDaAna.depositar(100);
+		contaDaAna.consultarSaldo();
+		contaDaAna.depositar(30);
+		contaDaAna.consultarSaldo();
+		contaDaAna.sacar(50);
+		contaDaAna.consultarSaldo();
+		contaDaAna.sacar(500);
+		contaDaAna.consultarSaldo();
+		contaDaAna.sacar(50);
+		contaDaAna.consultarSaldo();
+		contaDaAna.sacar(80);
+		contaDaAna.consultarSaldo();
+		contaDaAna.depositar(100);
+		contaDaAna.consultarSaldo();
+		contaDaAna.getSaldo();
 		
+		int a = somar(10, 5);
+		
+	}
+	
+	public static int somar(int valor1, int valor2) {
+		int resultado = valor1 + valor2;
+		return resultado;
 		
 	}
 
